@@ -1,0 +1,36 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+  
+header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto; /*By using using auto the x-axis setting, what happens is that it will */
+    border: 1px solid #bbb;       /*Center the website properly on the page. But usually when 1rem is written*/
+    padding: 1em;      /*it knows that it has to leave a gap at the top and button*/
+    background-color:cadetblue;
+
+}
+
+main {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+section {
+    padding: 2em;
+    background-color: aliceblue
+}
+
+@media screen and (min-width: 500px){
+    header {
+        background-color: black;
+        color: white;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+    
