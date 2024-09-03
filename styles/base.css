@@ -8,7 +8,7 @@ Then i will set that class to flex: 1. In that way they can have equal fractions
     padding:  0;
     background-color: rgb(226, 229, 232);
 
-};
+}
 
 body {
         display: grid;
