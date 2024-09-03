@@ -4,8 +4,7 @@ Then i will set that class to flex: 1. In that way they can have equal fractions
 
 * {
     width: auto;
-    margin: auto;
-    padding:  0;
+    padding:  1px;
     background-color: rgb(226, 229, 232);
 
 }
@@ -16,7 +15,7 @@ body {
         grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: large;
-        padding:10px;
+      
         
         
 } 
