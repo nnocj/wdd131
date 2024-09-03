@@ -9,14 +9,15 @@ Then i will set that class to flex: 1. In that way they can have equal fractions
 
 }
 
+
 body {
         display: grid;
         height: 100vh;
         grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: large;
-      
-        
+        font-family: "Spectral", serif;
+        font-weight: 200;
+        font-style: normal;
+         
         
 } 
 
@@ -47,6 +48,7 @@ h1{
     width: 100%;
     color: rgb(233, 221, 221);
     margin:0;
+    font-weight: 100;
 }
 
 h2 {
