@@ -53,7 +53,7 @@ section ul {
 
 .card a {
     display:flex;
-    color: rgb(197, 74, 74);
+    color: red;
     font-weight: 400;
     font-size: medium;
 }
@@ -115,7 +115,7 @@ h1 {
 }
 
 .head-nav a {
-    color:  rgb(197, 74, 74);
+    color:  red;
     background-color: rgb(36, 34, 34);
     text-decoration: none;
     font-weight: 400;
