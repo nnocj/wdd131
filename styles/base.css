@@ -1,115 +1,175 @@
-/*I can be create an aside using flex on the parent container. Then I will set the two major components to have the same class.
-Then i will set that class to flex: 1. In that way they can have equal fractions.*/
-
-
-* {
-    width: auto;
-    padding:  1px;
+*  {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 1px;
     background-color: rgb(226, 229, 232);
-
 }
 
-
 body {
-        display: grid;
-        height: 100vh;
-        grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
-        font-family: "Spectral", serif;
-        font-weight: 200;
-        font-style: normal;
-         
-        
-} 
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    font-family: "Spectral", serif;
+    font-weight: 200;
+  
+}
 
 header {
-    grid-column: 1 / 4;
-    margin-bottom: 10px;
+    grid-column: 1 / -1;
+    /*background-color: rgb(46, 46, 119);*/
+    color: rgb(226, 229,232);
+    text-align: center;
+    padding: 10px 0;
 }
 
 main {
-    display:flex;
-    margin: 0 auto; 
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
+    padding: 20px;
+   
 
 }
 
 .card {
-    flex: 1;
-    border: 1px solid black;
-    margin-top: 0;
-
+    flex: 1 1 calc(33.333% - 40px); /* 3 columns layout */
+    border: 1px lightgray solid;
+    border-radius: 10px;
+    background-color: rgb(226, 229, 232);
+    
 }
 
 
-h1{
-    background-color: rgb(46, 46, 119);
-    justify-items: center;
-    width: 100%;
-    color: rgb(233, 221, 221);
-    margin:0;
+
+section ul { 
+    margin-left: 30%;
+    justify-content: space-around;
+    align-items: center;
+    vertical-align: middle;
+    
+}
+
+.card a {
+    display:flex;
+    color: rgb(197, 74, 74);
+   
+}
+
+.card a:hover {
+    color: blue;
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+h1 {
     font-weight: 100;
 }
 
-h2 {
-    margin: 0;
-
-}
-
-
-.location img {
+.location img,
+.summary img {
+    box-sizing: content-box;
     max-width: 30%;
+    max-height: 50rem;
+    height: auto;
+    margin: 10px 20px;
     position: relative;
+}
+ 
+.location img {
     float: left;
 }
 
-.summary {
-    margin-top:0;
-    margin-bottom: 7rem;
-}
-
 .summary img {
-    max-width: 30%;
-    position: relative;
     float: right;
 }
 
-
-.summary p {
-    text-wrap:wrap;
+.location {
+    background-color: rgb(226, 229, 232);
 }
 
-.summary h2, .card h2 {
-    color: rgb(233, 221, 221);
-    background-color:  rgb(46, 46, 119);;
-}
-
-
-.name {
-    color: darkgrey;
-    background-color:  rgb(46, 46, 119);;
+.summary {
+    margin-bottom: 2rem;
+    background-color: rgb(226, 229, 232);
+    
 }
 
 .head-nav {
     display: flex;
     justify-content: space-evenly;
     background-color: black;
-    
+    padding: 10px 0;
 }
 
 .head-nav a {
+    color:  rgb(197, 74, 74);
     background-color: black;
-    color: rgb(233, 221, 221);
     text-decoration: none;
 }
 
 .head-nav a:hover {
-    color:rgb(132, 142, 201);
+    color: rgb(226, 229,232);
+;
+}
+.header-h1, .header-h1 h1 {
+    background-color: rgb(46, 46, 119);
 }
 
-footer {
+.summary h2, .wd h2 {
+    background-color: rgb(47, 65, 113);
+    display: flex;
+    justify-content: center;
+    color:rgb(226, 229, 232);
+    font-weight: 100;
+}
+
+.location h2 {
     display: flex;
     justify-content: center;
 }
 
+footer {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgb(46, 46, 119);
+    color: rgb(226, 229,232);
+}
 
+footer p {
+    background-color: rgb(46, 46, 119);
+}
+
+
+/* Responsive Design */
+/* Adjusting the default card layout */
+.card {
+    flex: 1 1 calc(33.333% - 40px); /* Standard size for cards */
+    border: 1px lightgray solid;
+    border-radius: 10px;
+    background-color: rgb(226, 229, 232);
+}
+
+/* Specific styling for the aside card */
+.aside-card {
+    flex: 0 1 calc(25% - 40px); /* Reduce the width of this card to 25% */
+}
+
+/* Styling for smaller screens */
+@media (max-width: 1024px) {
+    .card {
+        flex: 1 1 calc(50% - 40px); /* Two-column layout */
+    }
+
+    .aside-card {
+        flex: 1 1 calc(40% - 40px); /* Adjust the aside card for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .card, .aside-card {
+        flex: 1 1 100%; /* Single-column layout */
+    }
+}
