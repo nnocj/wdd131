@@ -110,13 +110,13 @@ h1 {
 .head-nav {
     display: flex;
     justify-content: space-evenly;
-    background-color: black;
+    background-color: rgb(36, 34, 34);
     padding: 10px 0;
 }
 
 .head-nav a {
     color:  rgb(197, 74, 74);
-    background-color: black;
+    background-color: rgb(36, 34, 34);
     text-decoration: none;
     font-weight: 400;
     font-size: medium;
