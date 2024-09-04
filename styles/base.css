@@ -38,6 +38,7 @@ main {
     border-radius: 10px;
     background-color: rgb(226, 229, 232);
     
+    
 }
 
 
@@ -90,10 +91,19 @@ h1 {
     background-color: rgb(226, 229, 232);
 }
 
+.location h2 {
+    border-bottom: 1px solid rgb(154, 171, 188);
+    margin: 50px;
+}
+
 .summary {
     margin-bottom: 2rem;
     background-color: rgb(226, 229, 232);
     
+}
+
+.summary p {
+   padding: 10px;
 }
 
 .head-nav {
