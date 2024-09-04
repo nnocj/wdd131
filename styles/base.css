@@ -53,13 +53,13 @@ section ul {
 
 .card a {
     display:flex;
-    color: red;
+    color: blue;
     font-weight: 400;
     font-size: medium;
 }
 
 .card a:hover {
-    color: blue;
+    color: black;
 }
 
 h1, h2 {
@@ -115,7 +115,7 @@ h1 {
 }
 
 .head-nav a {
-    color:  red;
+    color:  white;
     background-color: rgb(36, 34, 34);
     text-decoration: none;
     font-weight: 400;
