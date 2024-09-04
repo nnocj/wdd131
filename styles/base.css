@@ -54,7 +54,8 @@ section ul {
 .card a {
     display:flex;
     color: rgb(197, 74, 74);
-   
+    font-weight: 400;
+    font-size: medium;
 }
 
 .card a:hover {
@@ -117,6 +118,8 @@ h1 {
     color:  rgb(197, 74, 74);
     background-color: black;
     text-decoration: none;
+    font-weight: 400;
+    font-size: medium;
 }
 
 .head-nav a:hover {
