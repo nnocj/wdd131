@@ -11,6 +11,7 @@ body {
     grid-template-rows: auto 1fr auto;
     font-family: "Spectral", serif;
     font-weight: 200;
+    
   
 }
 
@@ -44,7 +45,7 @@ main {
 
 
 section ul { 
-    margin-left: 30%;
+    margin: 50% 12.5%;
     justify-content: space-around;
     align-items: center;
     vertical-align: middle;
