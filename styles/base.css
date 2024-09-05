@@ -38,6 +38,8 @@ main {
     border: 1px lightgray solid;
     border-radius: 10px;
     background-color: rgb(226, 229, 232);
+    margin: 0;
+    padding: 0;
     
     
 }
@@ -45,10 +47,11 @@ main {
 
 
 section ul { 
-    margin: 50% 12.5%;
+    margin: 100px 50px;
     justify-content: space-around;
     align-items: center;
     vertical-align: middle;
+  
     
 }
 
@@ -74,9 +77,9 @@ h1 {
 .location img,
 .summary img {
     box-sizing: content-box;
-    max-width: 30%;
-    max-height: 50rem;
-    height: auto;
+    max-width: 10rem;
+    max-height: 10rem;
+    min-width: 10rem;
     margin: 10px 20px;
     position: relative;
 }
@@ -137,6 +140,8 @@ h1 {
     justify-content: center;
     color:rgb(226, 229, 232);
     font-weight: 100;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .location h2 {
@@ -156,6 +161,10 @@ footer p {
     background-color: rgb(46, 46, 119);
 }
 
+#year, #lastModified {
+      color: rgb(226, 229, 232);
+      background-color: rgb(46, 46, 119);
+}
 
 /* Responsive Design */
 /* Adjusting the default card layout */
@@ -168,7 +177,7 @@ footer p {
 
 /* Specific styling for the aside card */
 .aside-card {
-    flex: 0 1 calc(25% - 40px); /* Reduce the width of this card to 25% */
+    flex: 0 1 calc(42% - 40px); /* Reduce the width of this card to 42% */
 }
 
 /* Styling for smaller screens */
@@ -187,3 +196,6 @@ footer p {
         flex: 1 1 100%; /* Single-column layout */
     }
 }
+
+
+
