@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Picture Album to practice responsive web development">
+    <meta name="author" content="Nicholas Oblitey Commey">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header-grid">
+        <button type="button" id="menu"></button>
+        <h1 class="header-h1">Temple Album</h1>
+        <nav class="head-nav">
+            <a href="#">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+    <main>
+        <h2 class="active"></h2>
+        <section class="grid-view">
+            <figure>
+                <img src="images/aba-t.png" alt="Day time picture of the Nigeria Aba Temple">
+                <figcaption>Aba, Nigeria</figcaption>
+            </figure>
+            <figure>
+                <img src="images/abidjan-ivory-coast-temple-36757-main.jpg" alt="Picture of the Ivory Coast Abidjan temple in it near-complete construction stage">
+                <figcaption> Abidjan, Ivory Coast</figcaption>
+            </figure>
+            <figure>
+                <img src="images/ghana-t.png" alt="Day time picture of the Ghana Accra Temple">
+                <figcaption>Accra, Ghana</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Front_view_of_the_Durban_Temple_of_the_Church_of_Jesus_Christ_of_Latter_day_Saints.jpg" alt="Front view of the South Africa Durban Temple">
+                <figcaption>Durban, South Africa</figcaption>
+            </figure>
+            <figure>
+                <img src="images/germany-frankfurt.jpg" alt="Picture of the Frankfurt Germany temple">
+                <figcaption>Frankfurt, Germany</figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt-t.jpg" alt="Picture of the Historic Salt lake City temple">
+                <figcaption>Salt Lake, United States of America</figcaption>
+            </figure>
+            <figure>
+                <img src="images/harare-zimbabwe-temple-50065.jpg" alt="Picture of the Harare Zimbabwe temple under construction">
+                <figcaption>Harare, Zimbabwe</figcaption>
+            </figure>
+            <figure>
+                <img src="images/kinshasa-democratic-republic-of-the-congo-temple-2337-thumb.jpg" alt="Picture of the Kinshasa Democratic Republic of the Congo temple">
+                <figcaption>Kinshasa, Democratic Republic of Congo</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rome-t.jpg" alt="Photo of the Rome Italy temple">
+                <figcaption>Rome, Italy</figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="year"></span> 🌴 - Nicholas Oblitey Commey - Accra 🌴</p> 
+        <p>Last modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
