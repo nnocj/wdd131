@@ -90,6 +90,10 @@ the hamburger button is open navigation.*/
     display: none;
 }
 
+h2, .active {
+    font-weight: bold;
+}
+
 .head-nav {
     display: none;
 }

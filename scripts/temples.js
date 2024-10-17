@@ -1,10 +1,3 @@
-const link = document.querySelector("a");
-const active = document.querySelector("#active");
-
-
-link.addEventListener('click', ()=> {
-   h1.textContent = link.textContent;
-})
 
 
 /*menu should show content only when the hamburger button is pressed.*/
