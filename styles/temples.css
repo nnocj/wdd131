@@ -69,12 +69,33 @@ figure {
     list-style: none;
 }
 
+/*To ensure that on small screens, the navigation will only show when
+the hamburger button is open navigation.*/
+.head-nav.open {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-weight: 700;
+    list-style: none;
+}
+
+.head-nav a {
+    margin: 10px;
+}
+
+
+.header-h1.hide {
+    display: none;
+}
+
 .head-nav {
     display: none;
 }
 
-.header-h1.open::before {
-    content: '';
+.head-nav a:hover {
+    text-decoration: underline;
 }
 
 .header-h1 {
