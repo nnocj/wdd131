@@ -92,6 +92,8 @@ the hamburger button is open navigation.*/
 
 h2, .active {
     font-weight: bold;
+    display: flex;
+    justify-content: center;
 }
 
 .head-nav {
