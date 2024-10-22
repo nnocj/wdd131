@@ -198,6 +198,10 @@ footer p {
     .card, .aside-card {
         flex: 1 1 100%; /* Single-column layout */
     }
+
+    .header-h1 h1 {
+        font-size: medium;
+    }
 }
 
 
