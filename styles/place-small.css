@@ -48,6 +48,9 @@ footer p{
     justify-content: center;
     margin: 0;
 }
+.hero img {
+    width:100%;
+}
 
 .hero .data, .hero #weather-content, .hero .weather {
     display:flex;
