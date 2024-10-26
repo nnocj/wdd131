@@ -14,3 +14,5 @@ document.addEventListener('DOMContentLoaded', function() {
         wind_chill.textContent = "N/A";
     }
 });
+
+
