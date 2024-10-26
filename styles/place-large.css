@@ -48,7 +48,8 @@
         position: relative;
         padding:10px;
         background-color: green;
-        color:white;
+        color: white;
+        margin: 0;
         left: -30px;
         margin-bottom: 20px;
     }
