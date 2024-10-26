@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A Webpage about Ghana, a West African country">
+    <meta name="author" content="Nicholas Oblitey Commey">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/place-small.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+    <title>Ghana</title>
+</head>
+<body>
+    <header>
+        <h1 class="head-title">Ghana</h1>
+        <div class="header-style"></div>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/ghana-tradition-large-1200.webp" media="(min-width: 1000px)">
+                <source srcset="images/ghana-people-medium-600.webp" media="(min-width: 500px)">
+                <Img src="images/ghanaiansdisplayinginsmock-small-300.webp" alt="A picture showing some ghanaians in traditional attire" width="100%" height="auto">
+            </picture>
+            <article class="data">
+                <h2>Data</h2>
+                <p><b>Area:</b> 239,567 km2</p>
+                <p><b>Population:</b> 34,582,346</p>
+                <p><b>Capital:</b> Accra</p>
+                <p><b>Official Language:</b> English</p>
+                <p><b>Currency:</b> Cedi, Pesewa</p>
+                <p><b>Timezone:</b> UTC 00</p>
+                <p><b>Calling Code:</b> +233</p>
+                <p><b>Internet TLD:</b> .GH</p>       
+            </article>
+            <div class="divider"></div>
+            <article class="weather">
+                <div id="weather-content">
+                  <h2>Weather</h2>
+                  <img src="images/1530391_weather_clouds_sun_sunny_icon.svg" alt="Weather icon">
+                </div>
+                <p><b>Temperature:</b> <span id="temp-value">9</span>°C</p>
+                <p><b>Conditions:</b> Sunny</p>
+                <p><b>Wind:</b> <span id="wind-value">6</span>km/h</p>
+                <p><b>Wind Chill:</b> <span id="chill-value"></span>°C</p>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="year"></span> 🌻 - Nicholas Oblitey Commey - Accra 🌻<br>Last modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

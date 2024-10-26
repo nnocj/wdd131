@@ -1,0 +1,81 @@
+@media (min-width: 748px) {
+    .hero {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin: 0;
+    }
+
+
+    .hero .data {
+        position: absolute;
+        width: 25%;
+        top: 10%;
+        left: 20px;
+        background-color: rgba(239, 243, 245, 0.8);
+        padding: 1em;
+        border-radius: 5px;
+    }
+
+    .hero .weather {
+        position: absolute;
+        width: 25%;
+        bottom: 10%;
+        right: 20px;
+        background-color: rgba(239, 243, 245, 0.8);
+        padding: 1em;
+        border-radius: 5px;
+    }
+
+    .hero #weather-content {
+        display:grid;
+        position: relative;
+        padding:10px;
+        background-color: green;
+        color:white;
+        left:-30px;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap:15px;
+        margin-bottom: 20px;
+    }
+
+    #weather-content h2 {
+        background-color: green;
+    }
+
+    .hero .data h2 {
+        position: relative;
+        padding:10px;
+        background-color: green;
+        color:white;
+        left: -30px;
+        margin-bottom: 20px;
+    }
+    .hero p, span, b, img {
+        background-color: transparent;
+        align-items: center;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    /*hide the divider on larger screens*/
+    .divider {
+        display:none;
+    }
+
+    
+    /*To adjust width of data and weather to fit larger screens*/
+   @media (min-width: 825px){
+        .hero .weather, .hero .data {
+            width: 20%;
+        }
+   }
+    
+}
+
+
