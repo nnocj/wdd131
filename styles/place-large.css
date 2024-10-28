@@ -46,7 +46,7 @@
         margin-bottom: 20px;
     }
 
-    .emoji-img::after, #weather-content {
+    .emoji-img::after, #weather-content::after {
         content: "✈";
     }
 
