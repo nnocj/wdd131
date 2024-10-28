@@ -71,7 +71,7 @@
         border-radius: 5px;
     }
 
-    .hero picture, #weather-content picture, main img {
+    .hero picture, #weather-content picture, main img, #weather-content img  {
         background-color: green;
     }
 
