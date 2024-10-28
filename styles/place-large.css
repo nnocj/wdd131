@@ -1,3 +1,8 @@
+:root {
+    --primary-color: yellowgreen;
+    --secondary-color: rgba(239, 243, 245);
+}
+
 @media (min-width: 748px) {
     .hero {
         display: flex;
@@ -41,9 +46,16 @@
         margin-bottom: 20px;
     }
 
+    .emoji-img::after, #weather-content {
+        content: "✈";
+    }
+
     #weather-content h2 {
         background-color: green;
+
     }
+
+  
 
     .hero .data h2 {
         position: relative;
@@ -66,6 +78,13 @@
         border-radius: 5px;
     }
 
+    .hero picture, #weather-content picture, main img {
+        background-color: green;
+    }
+
+    .hero picture {
+        background-color: var(--primary-color);
+    }
 
     /*hide the divider on larger screens*/
     .divider {
@@ -74,12 +93,22 @@
 
     
     /*To adjust width of data and weather to fit larger screens*/
-   @media (min-width: 825px){
+    @media (min-width: 824px){
         .hero .weather, .hero .data {
             width: 20%;
         }
    }
+
+   @media (min-width: 823px) and (max-width: 900px) {
+        .hero .weather, .hero .data{
+            width: 25%;
+        }
+    }
+
+    @media (min-width: 901px) and (max-width: 925px) {
+        .hero .weather, .hero .data{
+            width: 24%;
+        }
+    }
     
 }
-
-

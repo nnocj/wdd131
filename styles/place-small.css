@@ -76,4 +76,8 @@ footer p{
     background-color: var(--secondary-color);
 }
 
+#weather-content img {
+    width: 5rem;
+}
+
 
