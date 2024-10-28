@@ -11,7 +11,6 @@
         margin: 0;
     }
 
-
     .hero .data {
         position: absolute;
         width: 25%;
@@ -45,17 +44,11 @@
         gap:15px;
         margin-bottom: 20px;
     }
-
-    .emoji-img::after, #weather-content::after {
-        content: "✈";
-    }
-
+    
     #weather-content h2 {
         background-color: green;
 
     }
-
-  
 
     .hero .data h2 {
         position: relative;
@@ -90,7 +83,6 @@
     .divider {
         display:none;
     }
-
     
     /*To adjust width of data and weather to fit larger screens*/
     @media (min-width: 824px){
@@ -110,5 +102,9 @@
             width: 24%;
         }
     }
-    
+    @media (min-width:1000px){
+        .emoji-img::after, #weather-content::after {
+            content: "✈";
+        }
+    }
 }
