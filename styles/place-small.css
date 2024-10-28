@@ -1,3 +1,8 @@
+:root {
+    --primary-color: yellowgreen;
+    --secondary-color: rgba(239, 243, 245);
+}
+
 * {
     box-sizing: border-box;
     max-width: 1200px;
@@ -14,7 +19,7 @@ body {
 }
 
 main p, b, h2, span, img {
-    background-color: rgba(239, 243, 245);
+    background-color: var(--secondary-color);
 }
 
 header, footer, footer p, footer #year, footer #lastModified{
@@ -31,7 +36,7 @@ footer p{
 .header-style {
     width:100%;
     height: 3px;
-    background-color: yellowgreen;
+    background-color: var(--primary-color);
 }
 
 .head-title {
@@ -56,7 +61,7 @@ footer p{
     display:flex;
     flex-wrap: wrap;
     flex-direction: column;
-    background-color: rgba(239, 243, 245);
+    background-color: var(--secondary-color);
     justify-content: center;
     text-align: center;
     padding: 1em;
@@ -67,8 +72,8 @@ footer p{
 .divider {
     width: 100%;
     height: 1px;
-    color: rgb(233, 226, 226);
-    background-color: rgb(233, 226, 226);
+    color: var(--secondary-color);
+    background-color: var(--secondary-color);
 }
 
 
