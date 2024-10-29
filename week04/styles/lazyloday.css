@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main img {
+    width: 400px;
+    height: 600px;
+    background: #000;
+    animation: fadeInFromBlack 15s;
+}
+
+main, header, footer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+}
+
+@keyframes fadeInFromBlack {
+  0%{
+        opacity: 0;
+        background-color: black;
+    }
+
+   100% { 
+            opacity: 1;
+            background:transparent;
+        } 
+ }
