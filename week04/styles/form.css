@@ -12,13 +12,6 @@ table {
 
 }
 
-#top-header, #dark-head {
-   /* background-color: black;
-    color: white;
-    border-color: black;*/
-    margin-bottom:-10px;
-}
-
 caption {
     padding: 10px;
     caption-side: bottom;
@@ -28,7 +21,10 @@ caption {
     background-color: black;
     color: white;
     padding: 10px;
+    margin-bottom:-10px;
 }
+
+
 
 #basic, #premium, #deluxe {
     background-color: rgb(55, 51, 51);

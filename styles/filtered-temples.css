@@ -24,6 +24,14 @@ header, footer, .head-nav a{
     text-decoration: none;
     
 }
+
+.head-nav button {
+    background-color: rgb(46, 46, 119);
+    color: rgb(226, 229, 232);
+    text-decoration: none;
+    border: none;
+}
+
 footer {
     text-align: center;
     font-size: larger;
@@ -39,9 +47,6 @@ h2 {
      color:rgb(46, 46, 119);
 }
 
-figure {
-    margin: 0;
-}
 
 #menu {
     position: absolute;
@@ -109,11 +114,24 @@ h2, .active {
 }
 
 
-figure img {
+.temples img {
     width: 100%;
-
 }
 
+article {
+    border: 1px solid rgb(227, 222, 222);
+    text-align: center;
+    padding: 20px;
+    box-shadow: 15%;
+}
+
+article span {
+    color:rgb(60, 132, 195);
+}
+
+article h3, article p {
+    color: black;
+}
 
 
     
