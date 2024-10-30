@@ -106,7 +106,7 @@ const displayTemples = (temples) => {
            <p><span>Location:</span> ${temple.location}</p>
            <p><span>Dedicated:</span> ${temple.dedicated}</p>
            <p><span>Size:</span> ${temple.area} sq. ft</p>
-           <img src="${temple.imageUrl || 'placeholder.jpg'}" alt="${temple.templeName}">
+           <img src="${temple.imageUrl || 'placeholder.jpg'}" alt="${temple.templeName} loading="lazy"">
        `;
        templesElement.appendChild(article);
    });
