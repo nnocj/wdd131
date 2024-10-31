@@ -52,7 +52,7 @@ input[type="text"], input[type="date"], textarea {
     font-weight: bold;}    
 
 .rating label {
-    color: orangered;
+    color: darkblue;
 }
 
 button {
