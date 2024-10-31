@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+    <link href="styles/form.css" rel="stylesheet">
+    <link href="styles/form-layout.css" rel="stylesheet">
+    <title>Abode Connect| Nicholas Oblitey Commey</title>
+    <meta name="description" content="Week05 WDD131 Form Assignment">
+    <meta name="author" content="Nicholas Oblitey Commey">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form id="reviewForm">
+            <label for="productName">Product Name:<span id="required">*</span></label>
+            <input type="text" id="productName" name="productName" required>
+    
+            <label>Rating:</label>
+            <div class="rating">
+                <label for="star1">★
+                    <input type="radio" id="star1" name="rating" value="1">
+                </label>
+                
+                <label for="star2">★★
+                    <input type="radio" id="star2" name="rating" value="2">
+                </label>
+                
+                <label for="star3">★★★
+                    <input type="radio" id="star3" name="rating" value="3">
+                </label>
+                
+                <label for="star4">★★★★
+                    <input type="radio" id="star4" name="rating" value="4">
+                </label>
+                
+                <label for="star5">★★★★★
+                    <input type="radio" id="star5" name="rating" value="5">
+                </label>
+                
+                
+            </div>
+    
+            <label for="installationDate">Date of Installation:<span id="required">*</span>
+                <input type="date" id="installationDate" name="installationDate" required>
+            </label>
+            
+            <label>Which features did you find useful in the product?</label>
+            <p>Check all that applies</p>
+            <div class="checkbox-group">
+                <input type="checkbox" id="durability" name="features" value="durability">
+                <label for="durability">Durability</label>
+
+                <input type="checkbox" id="ease-of-use" name="features" value="ease-of-use">
+                <label for="ease-of-use">Ease of Use</label>
+
+                <input type="checkbox" id="performance" name="features" value="performance">
+                <label for="performance">Performance</label>
+
+                <input type="checkbox" id="Design" name="features" value="design">
+                <label for="design">Design
+                   
+                </label>
+            </div>
+    
+            <label for="review">Written Review (optional):
+                <textarea id="review" name="review" rows="4"></textarea>
+            </label>
+            
+            <label for="name">Your Name (optional):
+                <input type="text" id="name" name="name">
+            </label>
+            
+    
+            <button type="submit">Post Review</button>
+        </form>
+    </main>
+    <footer>
+        <p>©<span id="year"></span> 🏠 Abode Connect: Nicholas Oblitey Commey - Accra 🏠<br>Last modification: <span id="lastModified"></span></p>
+    </footer>
+
+</body></html>
