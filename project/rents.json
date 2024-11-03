@@ -1,0 +1,113 @@
+{
+    "rentalListings": [
+      {
+        "ownerName": "John Doe",
+        "email": "johndoe@example.com",
+        "phoneNumber": "+233201234567",
+        "propertyAddress": "123 Kwame Nkrumah Avenue",
+        "city": "Accra",
+        "rentDuration": "1year",
+        "rentPrice": 5000,
+        "features": ["wired", "tiled", "painted", "sealed", "toilet", "bath"],
+        "gated": "yes",
+        "propertyImages": ["https://example.com/images/accra_apt1_front.webp"]
+      },
+      {
+        "ownerName": "Mabel Asante",
+        "email": "mabelasante@example.com",
+        "phoneNumber": "+233209876543",
+        "propertyAddress": "45 Independence Street",
+        "city": "Kumasi",
+        "rentDuration": "2years",
+        "rentPrice": 9500,
+        "features": ["wired", "tiled", "painted", "sealed", "toilet", "bath"],
+        "gated": "no",
+        "propertyImages": ["https://example.com/images/kumasi_apt2_front.webp"]
+      },
+      {
+        "ownerName": "Kwame Mensah",
+        "email": "kwamemensah@example.com",
+        "phoneNumber": "+233204567890",
+        "propertyAddress": "12 Beach Road",
+        "city": "Cape Coast",
+        "rentDuration": "1year",
+        "rentPrice": 4000,
+        "features": ["wired", "painted", "toilet", "bath", "waterlogged"],
+        "gated": "yes",
+        "propertyImages": ["https://example.com/images/capecoast_apt3_front.webp"]
+      },
+      {
+        "ownerName": "Ama Owusu",
+        "email": "amaowusu@example.com",
+        "phoneNumber": "+233205678912",
+        "propertyAddress": "85 Aboabo Road",
+        "city": "Kumasi",
+        "rentDuration": "2years",
+        "rentPrice": 6500,
+        "features": ["tiled", "painted", "sealed", "toilet", "bath"],
+        "gated": "no",
+        "propertyImages": ["https://example.com/images/kumasi_apt4_front.webp"]
+      },
+      {
+        "ownerName": "Yaa Addo",
+        "email": "yaaaddo@example.com",
+        "phoneNumber": "+233203456789",
+        "propertyAddress": "100 Osu Street",
+        "city": "Accra",
+        "rentDuration": "1year",
+        "rentPrice": 5500,
+        "features": ["wired", "tiled", "painted", "sealed", "toilet"],
+        "gated": "yes",
+        "propertyImages": ["https://example.com/images/accra_apt5_front.webp"]
+      },
+      {
+        "ownerName": "Kofi Agyeman",
+        "email": "kofiagyeman@example.com",
+        "phoneNumber": "+233208765432",
+        "propertyAddress": "220 Labone Crescent",
+        "city": "Accra",
+        "rentDuration": "2years",
+        "rentPrice": 10500,
+        "features": ["wired", "tiled", "painted", "toilet", "bath"],
+        "gated": "yes",
+        "propertyImages": ["https://example.com/images/accra_apt6_front.webp"]
+      },
+      {
+        "ownerName": "Abena Sakyi",
+        "email": "abenasakyi@example.com",
+        "phoneNumber": "+233207654321",
+        "propertyAddress": "7 Takoradi Lane",
+        "city": "Cape Coast",
+        "rentDuration": "1year",
+        "rentPrice": 3000,
+        "features": ["tiled", "painted", "toilet"],
+        "gated": "no",
+        "propertyImages": ["https://example.com/images/capecoast_apt7_front.webp"]
+      },
+      {
+        "ownerName": "Efua Danquah",
+        "email": "efua@example.com",
+        "phoneNumber": "+233204432165",
+        "propertyAddress": "5 East Ridge",
+        "city": "Accra",
+        "rentDuration": "2years",
+        "rentPrice": 12000,
+        "features": ["wired", "painted", "sealed", "toilet", "bath"],
+        "gated": "yes",
+        "propertyImages": ["https://example.com/images/accra_apt8_front.webp"]
+      },
+      {
+        "ownerName": "Yaw Ofori",
+        "email": "yawofori@example.com",
+        "phoneNumber": "+233202233445",
+        "propertyAddress": "42 Patasi Lane",
+        "city": "Kumasi",
+        "rentDuration": "1year",
+        "rentPrice": 4500,
+        "features": ["wired", "tiled", "painted", "toilet"],
+        "gated": "no",
+        "propertyImages": ["https://example.com/images/kumasi_apt9_front.webp"]
+      }
+ 
+    ]
+}
