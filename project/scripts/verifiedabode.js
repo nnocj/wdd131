@@ -11,8 +11,6 @@ hamButton.addEventListener('click', () => {
    navigation.style.display == "contents";
 });
 
-
-
 //declaring the temples container
 const templesElement = document.querySelector(".temples");
 
@@ -114,8 +112,38 @@ const displayTemples = (temples) => {
    });
 };
 
+// Filter function for temples
+const filterTemples = (criteria) => {
+   /*To ensure that the active tab's name appear in the h2 element text content */
+   const activeTitle = document.querySelector("h2.active");
 
+   let filteredTemples;
+   switch(criteria) {
+       case "old":
+           filteredTemples = temples.filter(t => parseInt(t.dedicated.split(",")[0]) < 1900);
+           activeTitle.textContent = 'Old'
+           break;
+       case "new":
+           filteredTemples = temples.filter(t => parseInt(t.dedicated.split(",")[0]) > 2000);
+           activeTitle.textContent = 'New'
+           break;
+       case "large":
+           filteredTemples = temples.filter(t => t.area > 90000);
+           activeTitle.textContent = 'Large'
+           break;
+       case "small":
+           filteredTemples = temples.filter(t => t.area < 9000);
+           activeTitle.textContent = 'Small'
+           break;
+       default:
+           filteredTemples = temples;
+           activeTitle.textContent = 'Home'
+   }
+   displayTemples(filteredTemples);
+};
 
+// Initial display of all temples
+displayTemples(temples);
 
 
 

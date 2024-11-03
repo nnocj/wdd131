@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--Date: 16th October, 2024-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Picture Album to practice responsive web development">
+    <meta name="author" content="Nicholas Oblitey Commey">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <link rel="stylesheet" href="styles/verifiedabode.css">
+    <link rel="stylesheet" href="styles/verifiedabode-large.css">
+    <script src="scripts/verifiedabode.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header-grid">
+        <button type="button" id="menu" aria-label="Toggle navigation"></button>
+        <h1 class="header-h1">AbodeConnect</h1>
+        <nav class="filter-nav head-nav">
+            <a href="./abodeconnect.html" onclick="displayActive('home')">Home</a>
+            <a href="#" onclick="displayActive('verified')" >Verified Property</a>
+            <a href="./listproperty.html">List Property</a>
+        </nav>
+    </header>
+    <main>
+        <h2 class="active" aria-label="active-header">Verified Properties</h2>
+        <label for="homeFilter">Search by city:</label>
+        <select id="homeFilter" onchange="filterHomes(this.value)">
+            <option value="all">View All</option>
+            <option value="accra">Accra</option>
+            <option value="kumasi">Kumasi</option>
+            <option value="cape-coast">Cape Coast</option>
+        </select>
+        <div class="grid-view temples">
+            
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="year"></span> 🌴 - Nicholas Oblitey Commey - Accra 🌴</p> 
+        <p>Last modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

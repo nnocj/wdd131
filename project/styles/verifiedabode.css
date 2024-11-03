@@ -1,45 +1,21 @@
-
-
-*{
-    box-sizing: border-box;
-    margin: 0 auto;
-    max-width: 1200px;
- }
-
-
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    display:grid;
-    min-height:100vh;
-    grid-template-rows: auto 1fr auto;
 }
   
-/*header, main, footer {
+header, main, footer {
     max-width: 1200px;
     margin: 0rem auto; /*By using using auto the x-axis setting, what happens is that it will */
-    /*border: 1px solid rgb(226, 229, 232);;       /*Center the website properly on the page. But usually when 1rem is written*/
-   /* padding: 1em;      /*it knows that it has to leave a gap at the top and button*/
+    border: 1px solid rgb(226, 229, 232);;       /*Center the website properly on the page. But usually when 1rem is written*/
+    padding: 1em;      /*it knows that it has to leave a gap at the top and button*/
 
-/*}*/
+}
 
 
 main {
     background-color: rgb(226, 229, 232);
     color: rgb(46, 46, 119);
     font-weight: bold;
-    padding:30px;
-}
-
-h2,h3,p, strong, div {
-    padding: 10px;
-    text-align: center;
-}
-
-
-header, footer {
-    width: 100%;
-    padding: 20px;
 }
 
 header, footer, .head-nav a{
@@ -56,18 +32,16 @@ header, footer, .head-nav a{
     border: none;
 }
 
-p {
-    padding: 25px;
-   }
-
-main img {
-    width: 100%;
-
-}
-
 footer {
     text-align: center;
     font-size: larger;
+}
+
+select, label {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+
 }
 
 .grid-view {
@@ -144,8 +118,6 @@ h2, .active {
     display: flex;
     justify-content: center;
 }
-
-
 
 .head-nav {
     display: none;

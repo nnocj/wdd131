@@ -1,0 +1,116 @@
+@media (min-width: 768px) {
+    .grid-view {
+        display:grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr; 
+    }
+    figure img {
+        height: 350px;
+    }
+
+    .head-nav {
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: large;
+        font-weight: 500;
+        list-style: none;
+    }
+
+   
+    .head-nav a:hover {
+        text-decoration: underline;
+    }
+    
+    /*To ensure that even when the user do not close the hamburger button,
+    it the navigation content will flex horizontally when the screen is large*/
+    .head-nav.open {
+        display:flex;
+        font-size: large;
+        justify-content: space-between;
+        flex-direction: row;
+        list-style: none;
+    }
+
+    /*To ensure that even when the title will hide on small screen it would not hide
+    on large screen*/
+    .header-h1.hide {
+        display: contents;
+    }
+    
+    #menu {
+        display: none; /*hide burger*/
+    }
+
+    .header-grid {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr; 
+    }
+    
+}
+
+@media (min-width: 1024px) {
+   
+    header, footer,.header-h1, .head-nav a{
+        background-color: black;
+        color: rgb(226, 229, 232);
+        text-decoration: none;
+    }
+    .grid-view {
+        display:grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr; 
+    }
+
+    figure img {
+        min-height: 350px;
+    }
+
+    #menu {
+        display:none; /*hide burger*/
+    }
+
+    .head-nav a, .head-nav button {
+        background-color: black;
+    }
+
+
+    .head-nav {
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: large;
+        font-weight: 500;
+        list-style: none;
+    }
+
+    .head-nav a:hover {
+        text-decoration: underline;
+    }
+
+    /*To ensure that even when the user do not close the hamburger button,
+    it the navigation content will flex horizontally when the screen is large*/
+    .head-nav.open {
+        display:flex;
+        font-size: large;
+        justify-content: space-between;
+        flex-direction: row;
+        list-style: none;
+    }
+    
+    /*To ensure that even when the title will hide on small screen it would not hide
+    on large screen*/
+    .header-h1.hide {
+        display: contents;
+    }
+
+    .header-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+
+
