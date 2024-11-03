@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento&family=Titillium+Web:wght@300&display=swap');
+
+:root {
+    --primary-color:rgb(46, 46, 119);
+    --secondary-color:rgb(226, 229, 232);
+    --accent1-color:#1B1919;
+    --accent2-color:#12536C;
+    --accent3-color: #A52A2A;
+
+    --heading-font:'Quattrocento', serif;
+    --paragraph-font:'Titillium Web', serif;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1200px;
+ }
+
+
+body {
+        display:grid;
+        min-height:100vh;
+        grid-template-rows: auto 1fr auto;
+        font-family: var(--paragraph-font);
+        background-color: var(--secondary-color);
+      }
+
+main {
+    padding: 30px;
+}
+
+h2,h3,h4,h5,h6 {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+    padding: 10px;}
+
+h1, header div{
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+header, footer {
+        width: 100%;
+        padding: 20px;
+        color: var(--secondary-color);
+        background-color:var(--accent1-color);
+}
+footer p {
+    text-align: center;
+}
+
+p {
+    padding: 25px;
+   }
+
+nav {background-color: var(--accent1-color);
+font-size:1.2rem;
+display:flex;}
+
+nav a {/*display: block;*/
+color: var(--secondary-color);
+text-decoration: none;
+padding: 1rem;}
+
+nav a:link, nav a:visited {color: var(--secondary-color);}
+
+main img {
+    width: 100%;
+
+}
+
+nav a:hover {color: var(--secondary-color);
+background-color: var(--accent1-color);
+}
+
