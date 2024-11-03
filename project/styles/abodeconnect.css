@@ -52,8 +52,9 @@ p {
     padding: 25px;
    }
 
-main img {
-    width: 100%;
+.hero img {
+    max-width: 1120px;
+    width:100%;
 
 }
 
