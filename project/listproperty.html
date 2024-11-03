@@ -9,11 +9,13 @@
     <title>AbodeConnect</title>
     <link rel="stylesheet" href="styles/listproperty.css">
     <link rel="stylesheet" href="styles/listproperty-layout.css">
-    <script src="scripts/abodeconnect.js" defer></script>
-    <script src="scripts/getdates.js" defer></script>
+    <link rel="stylesheet" href="styles/listproperty-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <script src="scripts/abodeconnect.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form-image-preview.js" defer></script>
 </head>
 <body>
     <header class="header-grid">
@@ -26,67 +28,89 @@
         </nav>
     </header>
     <main>
-        <h2>Submit Your Property for Review and Listing</h2>
-        <form id="reviewForm">
-            <label for="productName">Product Name:<span id="required-1">*</span></label>
-            <input type="text" id="productName" name="productName" required>
-    
-            <label>Rating:</label>
-            <div class="rating">
-                <label for="star1">★
-                    <input type="radio" id="star1" name="rating" value="1">
+        <form action="/submit-rental-property" method="post" enctype="multipart/form-data">
+            <h2>Submit Your House for Rent Listing</h2>
+            <!--so here are my inputs -->
+            <!-- Name -->
+            <label for="ownerName">Your Name:</label>
+            <input type="text" id="ownerName" name="ownerName" required>
+        
+            <!-- Email -->
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <!-- Phone Number -->
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+        
+            <!-- Property Address -->
+            <label for="propertyAddress">Property Address:</label>
+            <input type="text" id="propertyAddress" name="propertyAddress" required>
+        
+            <!-- City -->
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+        
+            <!-- Rent Duration  -->
+            <label for="rentDuration">Rent Duration:</label>
+            <select id="rentDuration" name="rentDuration" required>
+                <option value="" disabled selected>Select Duration</option>
+                <option value="6months">6 Months</option>
+                <option value="1year">1 Year</option>
+                <option value="2years">2 Years</option>
+            </select>
+        
+            <!-- Rent Price -->
+            <label for="rentPrice">Rent Price (for selected duration):</label>
+            <input type="number" id="rentPrice" name="rentPrice" min="1" required>
+        
+            <!-- Property Features Checkboxes -->
+            <fieldset>
+                <legend>Property Features:</legend>
+        
+                <label>
+                    <input type="checkbox" name="features[]" value="wired"> Wired
                 </label>
-                
-                <label for="star2">★★
-                    <input type="radio" id="star2" name="rating" value="2">
+                <label>
+                    <input type="checkbox" name="features[]" value="tiled"> Tiled
                 </label>
-                
-                <label for="star3">★★★
-                    <input type="radio" id="star3" name="rating" value="3">
+                <label>
+                    <input type="checkbox" name="features[]" value="painted"> Painted
                 </label>
-                
-                <label for="star4">★★★★
-                    <input type="radio" id="star4" name="rating" value="4">
+                <label>
+                    <input type="checkbox" name="features[]" value="sealed"> Sealed (room ceiling)
                 </label>
-                
-                <label for="star5">★★★★★
-                    <input type="radio" id="star5" name="rating" value="5">
+                <label>
+                    <input type="checkbox" name="features[]" value="toilet"> Has Toilet
                 </label>
-                
-                
-            </div>
-    
-            <label for="installationDate">Date of Installation:<span id="required-2">*</span>
-                <input type="date" id="installationDate" name="installationDate" required>
+                <label>
+                    <input type="checkbox" name="features[]" value="bath"> Has Bath
+                </label>
+                <label>
+                    <input type="checkbox" name="features[]" value="waterlogged"> Located in a Water-logged Area
+                </label>
+            </fieldset>
+        
+            <!-- Gated Yes/No Radio Buttons -->
+            <label>Is the property gated?</label>
+            <label>
+                <input type="radio" name="gated" value="yes" required> Yes
             </label>
-            
-            <label>Which features did you find useful in the product?</label>
-            <p>Check all that applies</p>
-            <div class="checkbox-group">
-                <input type="checkbox" id="durability" name="features" value="durability">
-                <label for="durability">Durability</label>
-
-                <input type="checkbox" id="ease-of-use" name="features" value="ease-of-use">
-                <label for="ease-of-use">Ease of Use</label>
-
-                <input type="checkbox" id="performance" name="features" value="performance">
-                <label for="performance">Performance</label>
-
-                <input type="checkbox" id="design" name="features" value="design">
-                <label for="design">Design</label>
-            </div>
-    
-            <label for="review">Written Review (optional):
-                <textarea id="review" name="review" rows="4"></textarea>
+            <label>
+                <input type="radio" name="gated" value="no" required> No
             </label>
-            
-            <label for="name">Your Name (optional):
-                <input type="text" id="name" name="name">
-            </label>
-            
-    
-            <button type="submit">Post Review</button>
-        </form>
+        
+            <!-- Upload Images -->
+            <label for="propertyImages">Upload Property Images (exactly 3):</label>
+            <input type="file" id="propertyImages" name="propertyImages[]" accept="image/*" multiple required onchange="previewImages()">
+            <p>Please ensure one photo is taken from a distance showing the house from the front gate.</p>
+        
+            <!-- Image Preview -->
+            <div id="imagePreview" style="display: flex; gap: 10px; margin-top: 10px;"></div>
+        
+            <!-- Submit Button -->
+            <button type="submit">Submit Property</button>
+        </form>        
     </main>
     <footer>
         <p>©<span id="year"></span> 🏠 Abode Connect: Nicholas Oblitey Commey - Accra 🏠<br>Last modification: <span id="lastModified"></span></p>

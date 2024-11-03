@@ -14,14 +14,6 @@ body {
     min-height:100vh;
     grid-template-rows: auto 1fr auto;
 }
-  
-/*header, main, footer {
-    max-width: 1200px;
-    margin: 0rem auto; /*By using using auto the x-axis setting, what happens is that it will */
-    /*border: 1px solid rgb(226, 229, 232);;       /*Center the website properly on the page. But usually when 1rem is written*/
-   /* padding: 1em;      /*it knows that it has to leave a gap at the top and button*/
-
-/*}*/
 
 
 main {
