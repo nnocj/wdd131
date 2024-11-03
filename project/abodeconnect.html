@@ -7,8 +7,8 @@
     <meta name="author" content="Nicholas Oblitey Commey">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AbodeConnect</title>
-    <link rel="stylesheet" href="styles/siteplan.css">
-    <!--<link rel="stylesheet" href="styles/abodeconnect-large.css">-->
+    <link rel="stylesheet" href="styles/abodeconnect.css">
+    <link rel="stylesheet" href="styles/abodeconnect-large.css">
     <script src="scripts/abodeconnect.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,12 +20,15 @@
         <button type="button" id="menu" aria-label="Toggle navigation"></button>
         <h1 class="header-h1">AbodeConnect</h1>
         <nav class="filter-nav head-nav">
-            <a href="#">Home</a>
-            <a href="#">Verified Property</a>
-            <a href="#">List Property</a>
+            <a href="#" onclick="displayActive('home')">Home</a>
+            <a href="#" onclick="displayActive('verified')" >Verified Property</a>
+            <a href="#" onclick="displayActive('form')">List Property</a>
         </nav>
     </header>
     <main>
+        <h2 class="active" aria-label="active-header"> 
+            <span class="visually-hidden">Active Header</span>
+        </h2>
         <div class="hero">
             <picture>
                 <!--<source srcset="images/ghana-tradition-large-1200.webp" media="(min-width: 1000px)">
@@ -34,17 +37,16 @@
             </picture>   
         </div>
         <section>
-            <h2>How It Works</h2>
+            <h3>How It Works</h3>
             <p>Our app simplifies your housing search. Here’s how:</p>
-            <ol>
-                <li>Sign up and create a profile.</li>
-                <li>Browse through available properties or list your own.</li>
-                <li>Connect with property owners or potential buyers.</li>
-            </ol>
+            <p>Sign up and create a profile.</p>
+            <p>Browse through available properties or list your own.</p>
+            <p>Connect with property owners or potential buyers.</p>
+           
         </section>
     
         <section>
-            <h2>Key Benefits</h2>
+            <h3>Key Benefits</h3>
             <div class="benefits">
                 <div class="benefit">
                     <h3>Easy to Use</h3>
@@ -62,7 +64,7 @@
         </section>
     
         <section>
-            <h2>Testimonials</h2>
+            <h3>Testimonials</h3>
             <div class="testimonials">
                 <div class="testimonial">
                     <p>"This app made my house hunting so much easier! Highly recommended!"</p>
