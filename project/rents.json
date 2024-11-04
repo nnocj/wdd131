@@ -10,7 +10,7 @@
         "rentPrice": 5000,
         "features": ["wired", "tiled", "painted", "sealed", "toilet", "bath"],
         "gated": "yes",
-        "propertyImages": ["https://example.com/images/accra_apt1_front.webp"]
+        "propertyImages": ["https://nnocj.github.io/wdd131/project/images/house9-hero.webp"]
       },
       {
         "ownerName": "Mabel Asante",
@@ -22,7 +22,7 @@
         "rentPrice": 9500,
         "features": ["wired", "tiled", "painted", "sealed", "toilet", "bath"],
         "gated": "no",
-        "propertyImages": ["https://example.com/images/kumasi_apt2_front.webp"]
+        "propertyImages": ["https://nnocj.github.io/wdd131/project/images/house9-hero.webp"]
       },
       {
         "ownerName": "Kwame Mensah",
@@ -34,7 +34,7 @@
         "rentPrice": 4000,
         "features": ["wired", "painted", "toilet", "bath", "waterlogged"],
         "gated": "yes",
-        "propertyImages": ["https://example.com/images/capecoast_apt3_front.webp"]
+        "propertyImages": ["https://nnocj.github.io/wdd131/project/images/house9-hero.webp"]
       },
       {
         "ownerName": "Ama Owusu",
@@ -46,7 +46,7 @@
         "rentPrice": 6500,
         "features": ["tiled", "painted", "sealed", "toilet", "bath"],
         "gated": "no",
-        "propertyImages": ["https://example.com/images/kumasi_apt4_front.webp"]
+        "propertyImages": ["https://nnocj.github.io/wdd131/project/images/house9-hero.webp"]
       },
       {
         "ownerName": "Yaa Addo",
@@ -58,7 +58,7 @@
         "rentPrice": 5500,
         "features": ["wired", "tiled", "painted", "sealed", "toilet"],
         "gated": "yes",
-        "propertyImages": ["https://example.com/images/accra_apt5_front.webp"]
+        "propertyImages": ["https://nnocj.github.io/wdd131/project/images/house9-hero.webp"]
       },
       {
         "ownerName": "Kofi Agyeman",
@@ -70,7 +70,7 @@
         "rentPrice": 10500,
         "features": ["wired", "tiled", "painted", "toilet", "bath"],
         "gated": "yes",
-        "propertyImages": ["https://example.com/images/accra_apt6_front.webp"]
+        "propertyImages": ["https://nnocj.github.io/wdd131/project/images/house9-hero.webp"]
       },
       {
         "ownerName": "Abena Sakyi",
@@ -82,7 +82,7 @@
         "rentPrice": 3000,
         "features": ["tiled", "painted", "toilet"],
         "gated": "no",
-        "propertyImages": ["https://example.com/images/capecoast_apt7_front.webp"]
+        "propertyImages": ["https://nnocj.github.io/wdd131/project/images/house9-hero.webp"]
       },
       {
         "ownerName": "Efua Danquah",
@@ -94,7 +94,7 @@
         "rentPrice": 12000,
         "features": ["wired", "painted", "sealed", "toilet", "bath"],
         "gated": "yes",
-        "propertyImages": ["https://example.com/images/accra_apt8_front.webp"]
+        "propertyImages": ["https://nnocj.github.io/wdd131/project/images/house9-hero.webp"]
       },
       {
         "ownerName": "Yaw Ofori",
@@ -106,7 +106,7 @@
         "rentPrice": 4500,
         "features": ["wired", "tiled", "painted", "toilet"],
         "gated": "no",
-        "propertyImages": ["https://example.com/images/kumasi_apt9_front.webp"]
+        "propertyImages": ["https://nnocj.github.io/wdd131/project/images/house9-hero.webp"]
       }
  
     ]
