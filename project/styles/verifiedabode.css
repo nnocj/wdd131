@@ -160,3 +160,7 @@ article span {
 article h3, article p {
     color: black;
 }
+
+main { 
+    width: 100%;
+}
