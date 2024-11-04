@@ -7,6 +7,13 @@ async function loadListings() {
         const data = await response.json();
         const container = document.getElementById('rents');
 
+        
+        // Function to format numbers as Ghana cedis
+         const formatGhanaCedis = (amount) => {
+            return new Intl.NumberFormat('en-GH', { style: 'currency', currency: 'GHS' }).format(amount);
+        };
+
+
         // Function to render listings
         const renderListings = (listings) => {
             container.innerHTML = ''; // Clear the container first
@@ -16,8 +23,8 @@ async function loadListings() {
                 card.innerHTML = `
                     <img class="listing-image" src="${listing.propertyImages[0]}" alt="Image of property at ${listing.propertyAddress}" loading="lazy">
                     <div class="listing-info">
-                        <h3>₵${listing.rentPrice}</h3>
-                        <p>Location: ${listing.propertyAddress}, ${listing.city}</p>
+                        <h3>${formatGhanaCedis(listing.rentPrice)}</h3>
+                        <p>Location: GH${listing.propertyAddress}, ${listing.city}</p>
                         <p>Rent Duration: ${listing.rentDuration}</p>
                     </div>
                 `;
