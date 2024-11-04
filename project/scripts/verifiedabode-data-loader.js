@@ -24,7 +24,7 @@ async function loadListings() {
                     <img class="listing-image" src="${listing.propertyImages[0]}" alt="Image of property at ${listing.propertyAddress}" loading="lazy">
                     <div class="listing-info">
                         <h3>${formatGhanaCedis(listing.rentPrice)}</h3>
-                        <p>Location: GH${listing.propertyAddress}, ${listing.city}</p>
+                        <p>Location: ${listing.propertyAddress}, ${listing.city}</p>
                         <p>Rent Duration: ${listing.rentDuration}</p>
                     </div>
                 `;
